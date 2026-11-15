@@ -2,7 +2,7 @@
 
 A simple recipe search app built with React and Vite. Type a dish name, see matching meals, and open any recipe to view its details.
 
-🔗 **Live Demo:** [https://YOUR-VERCEL-LINK](https://YOUR-VERCEL-LINK)
+🔗 **Live Demo:** [https://recipe-finder-six-ebon.vercel.app]
 
 ## ✨ Features
 - Search recipes by meal name
