@@ -1,16 +1,62 @@
-# React + Vite
+# 🍽️ Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple recipe search app built with React and Vite. Type a dish name, see matching meals, and open any recipe to view its details.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://YOUR-VERCEL-LINK](https://YOUR-VERCEL-LINK)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- Search recipes by meal name
+- Recipe cards with image and name
+- Recipe details in a popup modal
+- Loading indicator while data is fetched
+- Handles empty results and errors without crashing
+- Responsive layout for mobile and desktop
 
-## React Compiler
+## 🛠️ Built With
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS
+- [TheMealDB API](https://www.themealdb.com/api.php)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshot
+![Recipe Finder Screenshot](./screenshot.png)
 
-## Expanding the ESLint configuration
+## 🚀 Run It Locally
+```bash
+# 1. Clone the repo
+git clone https://github.com/lakshman-velaga/recipe-finder.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 2. Go to the project folder
+cd recipe-finder
+
+# 3. Install packages
+npm install
+
+# 4. Start the app
+npm run dev
+```
+Then open `http://localhost:5173` in your browser.
+
+## 📁 Project Structure
+```
+src/
+├── Components/   # Navbar, SearchBar, RecipeCard, RecipeModal, Loader
+├── Pages/        # Home page
+└── Utils/        # API helper (fetchRecipes)
+```
+
+## 📚 What I Learned
+- Fetching data from a public API with `fetch` and `async/await`
+- Managing state with React hooks
+- Splitting a UI into reusable components
+- Handling loading and error states
+- Deploying a React app on Vercel
+
+## 🔮 Future Improvements
+- Save favourite recipes
+- Filter by category or ingredient
+
+## 👨‍💻 Author
+**Velaga Lakshman**
+[LinkedIn](https://linkedin.com/in/velaga-lakshman) | [GitHub](https://github.com/lakshman-velaga)
