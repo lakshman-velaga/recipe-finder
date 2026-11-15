@@ -1,0 +1,39 @@
+import React, { useState } from 'react'
+import './styles/SearchBar.css'
+
+const SearchBar = ({onSearch,onClear}) => {
+  const [query,setQuery]=useState('')
+  
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+    if(query.trim() === '' ) return
+    
+    onSearch(query)
+  }
+
+  const handleClear=()=>{
+    setQuery('')
+    onClear()
+  }
+
+
+  return (
+    <form  onSubmit={handleSubmit} className='search-bar'>
+      <input className='input' 
+      type="text" 
+      placeholder='Search for a Recipe...'
+      value={query}
+      onChange={(e)=>setQuery(e.target.value)} />
+      
+      <button type='submit' className='btn1'>Search</button>
+
+      {
+        query && <button type='button' className='clear-btn' onClick={handleClear}>
+           x
+            </button>
+      }
+    </form>
+  )
+}
+
+export default SearchBar
